@@ -1,0 +1,433 @@
+body{
+    font-family: 'segoe ui light' !important;
+    background-color:#F5F5F5;
+    overflow: hidden;
+   
+    
+}
+header{
+    background-image: url(img/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+ 
+}
+
+header h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul li {
+    margin-left: 25px;
+    margin-top:15px;
+    position: relative;
+}
+nav ul li::after
+{
+    content: '';
+    width:0.1rem;
+    height: 0.05rem;
+    background-color:white;
+    position: absolute;
+    opacity: 0;
+    margin-left: 10px;
+    transition: all 1s;
+    
+    
+}
+nav ul li:hover::after
+{
+    width:2rem;
+    opacity: 1;
+
+}
+header span::after{
+    content: '';
+    animation: animate infinite 5s;
+    font-size: 2.5rem;
+   
+
+}
+@keyframes animate 
+{
+    0%{
+        content:'Graphic Designer.|'
+    }
+    25%{
+        content: 'CEO DevFolio.|';
+    }
+    50%{
+        content: 'Web Developer.|';
+    }
+    75%{
+        content: 'Web Designer.|';
+    }
+    100%{
+        content: 'Frontend Developer.|';
+    }
+}
+
+.layer{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+/*------------------ Header-------------------*/
+
+#about .lists ul li  {
+    list-style: none  ;
+    margin-bottom: 15px;
+    
+
+
+}
+#about .lists span {
+    font-weight: bolder;
+
+}
+#about h1{
+    position: relative;
+}
+#about h1::after{
+    content: '';
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #007bff;
+    position: absolute;
+    top:110%;
+    left: 0%;
+
+
+}
+
+.progress{
+    margin-bottom: 10px;
+    
+}
+ #about .container {
+     background-color: white;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+#about img {
+    margin-left: 30px;
+  
+}
+/* -------------------ABOUT---------------------*/
+#services> p{
+    position: relative;
+}
+
+#services h1{
+    font-size: 5rem;
+    
+}
+
+#services .icon i  {
+    font-size: 4rem;
+    border-radius:50%;
+    border:solid 8px #007bff;
+    padding: 22px;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    transition: all 1s;
+    
+}
+#services .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+.service-content{
+    border-radius: 15px;
+    background-color:white ;
+}
+
+.service-content:hover .icon i 
+{
+    background-color:#007bff ;
+    border:#f0f3f5c4  8px solid !important;   
+}
+/*-------------------Services-------------------*/
+
+.informtion{
+    background-image: url(img/counters-bg.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.layer2 {
+    background-color: #2B81E099;
+    width: 100%;
+    height: 100%;
+    
+}
+.icons
+{
+    font-size: 4rem;
+    border: solid 5px #CDE1F8;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    padding-left: 25px;
+    
+}
+.portofilo h1
+{
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+}
+.portofilo h5
+{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.portofilo h1::after{
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #007bff;
+    position: absolute;
+    top:150%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/* ------------------Services--------------------------------------*/
+
+.img-card{
+    overflow: hidden;
+    
+}
+#portofilo .card-img-top{
+    transition: all 1s;
+    
+
+    
+    
+}
+#portofilo .card:hover .card-img-top {
+    transform: scale(1.5 , 1.5);
+}
+/*---------------------------------- portofilo-------------------*/
+.informtion1{
+    background-image: url(img/overlay-bg.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-attachment: fixed;
+
+   
+}
+.blog   img {
+    border-radius: 50%;
+}
+.blog-content span {
+    font-size: 3rem;
+    color:#007bff ;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+.blog-contents .card {
+    border:1px solid rgba(0, 0, 0, 0.1) !important;
+
+}
+.card-footer img{
+    width: 2.5rem;
+
+}
+.card-footer  a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.card-footer  a:hover{
+    color: #09c;
+}
+.card-footer .iconz
+{
+    margin-left: 4rem;
+    
+}
+/*-----------------portofilo------------------------*/
+.message-us {
+    background-attachment: fixed;
+    background-image: url(img/overlay-bg.jpg);
+    height: 100vh;
+    
+}
+.message-us .container {
+    background-color: white;
+    padding: 3rem;
+}
+.layer2
+{
+    overflow: auto;
+}
+.message-us h1 {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.message-us h1::after {
+    content: "";
+    position: absolute;
+    width: 7rem;
+    height: 0.2rem;
+    background-color: #0099cc;
+    top:120%;
+    left: 0.1rem;
+}
+.intouch-content .icon1 {
+   color:#09c;
+   margin: 0.5rem;
+}
+.icon1 span{
+    color: black;
+}
+.icon2{
+    width: 2.6rem;
+    height: 2.6rem;
+    border: solid #007bff 3px;
+    border-radius: 50%;
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: all 1s;
+    cursor: pointer;
+    
+}  
+.icon2:hover{
+    background-color: #09c;
+    border-color:rgb(166, 202, 231);
+    color: white;
+}
+
+#main-nav {
+    transition: all 1s;
+}
+#btnUp
+{
+    font-size: 2rem;
+    position: fixed;
+    right:50px;
+    top:550px;
+    color: #09c;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0;
+    display: none;
+}
+
+
+
+.sidebar
+{
+    position: fixed;
+    top:200px;
+    left: 0px;
+    z-index: 9999;
+   
+    
+}
+.color-box
+{
+    background-color:white;
+    float: left;
+    padding: 15px;
+
+    
+}
+.sidebar i {
+    background-color:white;
+    color: #09c;
+    padding: 10px;
+    float:  left;
+    cursor: pointer;
+
+}
+.color-item
+{
+    width: 32px;
+    height: 32px;
+    background-color:lightcoral;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#loading 
+{
+    background-color:white;
+    position: fixed;
+    top:0;
+    left:0 ;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .cube1, .cube2 {
+    background-color: #007bff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+  
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  @-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+  }
+  
+  @keyframes sk-cubemove {
+    25% { 
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
+  }
